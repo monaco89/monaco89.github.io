@@ -40,6 +40,20 @@ a {
   color: #222222;
 }
 
+#article-body {
+  white-space: pre-wrap;
+  font-size: 12pt !important;
+  padding: 2px 15px !important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.article-list a {
+  text-decoration: underline !important;
+}
+
 .window-sections {
   display: flex;
   flex-direction: row;
@@ -52,7 +66,8 @@ a {
 #start-bar {
   background: #c0c0c0;
   height: 2.5rem;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   bottom: 0;
   width: calc(100% - 1rem);
   display: flex;
