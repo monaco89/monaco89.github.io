@@ -16,6 +16,10 @@ h1, h2, p, li {
   font-family: monospace;
 }
 
+h1 {
+  margin: 0;
+}
+
 ::selection {
   background-color: #030051;
   color: white;
@@ -203,4 +207,25 @@ a {
   position: relative;
   top: -3px;
   height: calc(100% + -1px);
+}
+
+.terminal-view {
+  background-color: black !important;
+  color: white;
+}
+
+.green {
+  color: #41FF00 !important; /* 4AF626 33FF00 */
+}
+
+.terminal-window {
+  margin: 32px; 
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  .terminal-window {
+    margin: 32px; 
+    width: 100%;
+  }
 }
