@@ -62,9 +62,10 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: flex-start;
+  align-content: center;
+  justify-content: center;
   align-items: flex-start;
+  min-height: calc(100vh - 4rem);
 }
 
 #start-bar {
@@ -179,7 +180,7 @@ a {
 }
 
 #time-options:after {
-  content: '©2022 Nick Monaco';
+  content: '©2026 Nick Monaco';
 }
 
 .windows-box-shadow {
@@ -219,13 +220,26 @@ a {
 }
 
 .terminal-window {
-  margin: 32px; 
-  width: 50%;
+  margin: 32px;
+  width: 560px;
+  max-width: calc(100% - 64px);
+}
+
+.name-line {
+  font-size: 18pt !important;
+  font-weight: 700 !important;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.divider {
+  color: #444 !important;
+  user-select: none;
 }
 
 @media (max-width: 600px) {
   .terminal-window {
-    margin: 32px; 
-    width: 100%;
+    margin: 16px;
+    max-width: calc(100% - 32px);
   }
 }
