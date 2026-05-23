@@ -44,20 +44,6 @@ a {
   color: #222222;
 }
 
-#article-body {
-  white-space: pre-wrap;
-  font-size: 12pt !important;
-  padding: 2px 15px !important;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.article-list a {
-  text-decoration: underline !important;
-}
-
 .window-sections {
   display: flex;
   flex-direction: row;
