@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Software Engineer | Nick Monaco</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="98.css" />
   <link rel="stylesheet" href="index.css" />
   <meta name="description" content="Nick Monaco's resume, links, hopes and dreams" />
   <meta property="og:site_name" content="Nick Monaco" />
@@ -22,51 +21,58 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="apple-mobile-web-app-title" content="Nick Monaco" />
   <meta name="application-name" content="Nick Monaco" />
-  <meta name="theme-color" content="#018689" />
+  <meta name="theme-color" content="#e9e9eb" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="index.js" defer></script>
 </head>
 
 <body>
-  <div class="window-sections">
-    <div class="window terminal-window">
-      <div class="title-bar">
-        <div class="title-bar-text">nick@monaco:~$</div>
-        <div class="title-bar-controls">
-          <button aria-label="Minimize"></button>
-          <button aria-label="Maximize"></button>
-          <button aria-label="Close"></button>
+  <main class="device">
+    <div class="ipod">
+      <div class="bezel">
+        <div class="screen">
+          <div class="status-bar">
+            <span class="screen-title">iPod</span>
+            <span class="battery" aria-hidden="true"></span>
+          </div>
+          <div class="views">
+            <ul class="view menu active" id="menu" data-title="iPod">
+              <li class="selected"><a class="has-sub" href="#about">About</a></li>
+              <li><a target="_blank" rel="noopener" href="https://github.com/monaco89">GitHub</a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/nick-monac0/">LinkedIn</a></li>
+              <li><a target="_blank" rel="noopener" href="https://files.nickmonaco.me/NickMonacoResume.pdf">Resume</a></li>
+            </ul>
+            <section class="view text" id="about" data-title="About">
+              <h1>Nick Monaco</h1>
+              <p>Software Engineer at Travelers Insurance</p>
+              <p>Connecticut, US</p>
+              <p>I build software that helps people and organizations solve real problems.</p>
+              <p>I care about reliability, observability, and clean architecture.</p>
+            </section>
+          </div>
         </div>
       </div>
-      <div class="window-body">
-        <ul class="terminal-view tree-view">
-          <li class="name-line">Nick Monaco</li>
-          <br />
-          <li>Software Engineer at Travelers Insurance</li>
-          <li>Connecticut, US</li>
-          <br />
-          <li>I build software that helps people and organizations solve real problems.</li>
-          <li>I care about reliability, observability, and clean architecture.</li>
-          <br />
-          <li class="divider">────────────────────────────────────────</li>
-          <br />
-          <li>
-            <a class="link green" target="_blank" href="https://github.com/monaco89">GitHub</a>
-            <span class="green"> &nbsp;·&nbsp; </span>
-            <a class="link green" target="_blank" href="https://www.linkedin.com/in/nick-monac0/">LinkedIn</a>
-            <span class="green"> &nbsp;·&nbsp; </span>
-            <a class="link green" target="_blank" href="https://files.nickmonaco.me/NickMonacoResume.pdf">Resume</a>
-          </li>
-          <br />
-        </ul>
+
+      <div class="touch-buttons">
+        <button type="button" data-action="prev" aria-label="Previous">
+          <svg viewBox="0 0 20 10" aria-hidden="true"><rect x="0" y="0" width="2" height="10" /><path d="M11 0v10L2 5zM20 0v10L11 5z" /></svg>
+        </button>
+        <button type="button" data-action="menu" aria-label="Menu" class="menu-button">MENU</button>
+        <button type="button" data-action="play" aria-label="Play / Pause">
+          <svg viewBox="0 0 20 10" aria-hidden="true"><path d="M0 0v10l9-5z" /><rect x="12" y="0" width="3" height="10" /><rect x="17" y="0" width="3" height="10" /></svg>
+        </button>
+        <button type="button" data-action="next" aria-label="Next">
+          <svg viewBox="0 0 20 10" aria-hidden="true"><path d="M0 0v10l9-5zM9 0v10l9-5z" /><rect x="18" y="0" width="2" height="10" /></svg>
+        </button>
+      </div>
+
+      <div class="wheel">
+        <button type="button" class="center" data-action="select" aria-label="Select"></button>
       </div>
     </div>
-    <div id="start-bar">
-      <div id="start-button-items">
-        <a href="index.html"><label id="start-button" class="windows-box-shadow" for="start-button-input"></label></a>
-        <div id="items"></div>
-      </div>
-      <div id="time-options"></div>
-    </div>
+    <footer>©2026 Nick Monaco</footer>
+  </main>
 </body>
 
 </html>
